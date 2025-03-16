@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
+kernel.string=Zundamon Kernel by Helium_Studio
 do.devicecheck=1
 do.cleanup=1
 device.name1=
