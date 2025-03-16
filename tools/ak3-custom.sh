@@ -19,3 +19,11 @@ patch_dtb() {
     fi;
   fi;
 }
+
+clean_cache() {
+  ui_print " " "Installation done. Cleaning cache...";
+  rm -rf /cache/*;
+  rm -rf /data/dalvik-cache;
+  rm -rf /data/resource-cache;
+  rm -rf /data/system/package_cache;
+}
