@@ -7,14 +7,13 @@ properties() { '
 kernel.string=Zundamon Kernel by Helium_Studio
 do.devicecheck=1
 do.cleanup=1
-device.name1=raphael
-device.name2=raphaelin
+device.name1=mona
 '; } # end properties
 
 ### AnyKernel install
 # boot shell variables
-BLOCK=/dev/block/bootdevice/by-name/boot;
-IS_SLOT_DEVICE=0;
+BLOCK=boot;
+IS_SLOT_DEVICE=auto;
 NO_BLOCK_DISPLAY=1;
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
@@ -25,6 +24,17 @@ NO_BLOCK_DISPLAY=1;
 split_boot;
 flash_boot;
 ## end boot install
+
+# vendor_boot shell variables
+BLOCK=vendor_boot;
+
+# reset for vendor_boot patching
+reset_ak;
+
+# vendor_boot install
+split_boot;
+flash_boot;
+## end vendor_boot install
 
 # dtbo install
 flash_dtbo;
