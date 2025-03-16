@@ -33,3 +33,7 @@ flash_boot;
 # dtbo install
 flash_dtbo;
 ## end dtbo install
+
+# cache clean
+clean_cache;
+## end cache clean
