@@ -1,5 +1,5 @@
 # Zip Naming
-KNAME ?= Zundamon
+KNAME ?= Zundamon-OSS
 VERSION ?= 
 CODENAME ?= 
 
