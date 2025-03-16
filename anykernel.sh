@@ -7,7 +7,8 @@ properties() { '
 kernel.string=Zundamon Kernel by Helium_Studio
 do.devicecheck=1
 do.cleanup=1
-device.name1=
+device.name1=raphael
+device.name2=raphaelin
 '; } # end properties
 
 ### AnyKernel install
