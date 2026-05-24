@@ -9,7 +9,6 @@ do.devicecheck=1
 do.cleanup=1
 device.name1=raphael
 device.name2=raphaelin
-supported.versions=11 - 16
 '; } # end properties
 
 ### AnyKernel install
@@ -22,9 +21,9 @@ NO_BLOCK_DISPLAY=1;
 . tools/ak3-core.sh;
 . tools/ak3-custom.sh;
 
-# dtb patch
-patch_dtb;
-## end dtb patch
+# dtb merge
+merge_dtb;
+## end dtb merge
 
 # boot install
 split_boot;
