@@ -24,6 +24,17 @@ patch_dtb() {
   rm -f $AKHOME/Image.gz $AKHOME/dtb;
 }
 
+patch_super_resolution() {
+  ANDROID_VERSION=$(file_getprop /system/build.prop ro.build.version.release);
+  ANDROID_MAJOR=${ANDROID_VERSION%%.*};
+  if [ "$ANDROID_MAJOR" -ge 16 ] 2>/dev/null; then
+    ui_print " " "Enabling super-resolution enhancement...";
+    patch_cmdline "super_resolution" "super_resolution=10";
+  else
+    patch_cmdline "super_resolution" "super_resolution=1";
+  fi;
+}
+
 clean_cache() {
   ui_print " " "Installation done. Cleaning cache...";
   rm -rf /cache/*;

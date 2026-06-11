@@ -28,6 +28,7 @@ patch_dtb;
 
 # boot install
 split_boot;
+patch_super_resolution; # super-resolution patch
 flash_boot;
 ## end boot install
 
