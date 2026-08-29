@@ -9,7 +9,7 @@ do.devicecheck=1
 do.cleanup=1
 device.name1=raphael
 device.name2=raphaelin
-supported.versions=11 - 16
+supported.versions=11 - 17
 '; } # end properties
 
 ### AnyKernel install
