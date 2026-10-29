@@ -21,6 +21,10 @@ NO_BLOCK_DISPLAY=1;
 . tools/ak3-core.sh;
 . tools/ak3-custom.sh;
 
+# dtb merge
+merge_dtb;
+## end dtb merge
+
 # boot install
 split_boot;
 flash_boot;
